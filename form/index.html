@@ -8,19 +8,15 @@
 </head>
 <body>
     <h1>Registration Form</h1>
-    <form>
-        Enter UserName<input type="text">
-        <br></br>
-        Enter Password<input type="password">
-        <br></br>
-        Enter email<input type="email">
-        <br></br>
-        Enter Phone Number<input type="phone number">
-        <br></br>
-        Enter DOB <input type="date">
+    <form onsubmit="validateForm(event)">
+        <h1>Login Here</h1>
 
-        <button>Submit</button>
+        <input type="text" placeholder="Enter Name" name="username">
+        <input type="password" placeholder="Enter password" name="password">
+        <p id="error"></p>
+        <input type="submit" value="Log in">
 
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
